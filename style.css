@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orange: #FF7F50;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background: #eee;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--orange);
+}
+
+.header .logo i {
+    color: var(--orange);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--orange);
+}
+
+.home {
+    display: grid;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    vertical-align: middle;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:12rem;
+}
+
+.home .content {
+    top: 512px;
+    left: 376px;
+    width: 614px;
+    height: 140px;
+    text-align: left;
+    font: normal normal bold Cormorant SC;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    padding-top: 15rem;
+}
+
+.home .content h4 {
+    color: var(--orange);
+    font-size: 2rem;
+}
+
+.home .content h3 {
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.home .content p {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.homee img {
+    top: 100px;
+    left: 1058px;
+    width: 487px;
+    height: 737px;
+    background: transparent 50% 50% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    padding-right: 80%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.services {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.services .heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #fff;
+}
+
+.services .box-container .box {
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    position: relative;
+    padding:3rem 2rem;
+    outline: var(--outline);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.services .box img {
+    margin:1rem 0;
+    width: fit-content;
+    height: fit-content;
+    transition: opacity 0.3s;
+}
+
+.services .box h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.services .box p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.services .box .btn {
+    background: #ff007f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.services .box:hover {
+    transform: scale(1.05);
+}
+
+.services .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.services .box:hover::after {
+    opacity: 1;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: var(--orange);
+}
+
+.AllServices {
+    margin-top: 2rem;
+}
+
+.AllServices .btn {
+    background: none;
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.AllServices .btn:hover{
+    background-color: var(--orange);
+    transform: scale(1.05);
+}
+
+.projects {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.projects .heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;;
+}
+
+.projects-image {
+    flex: 1;
+    padding: 1rem;
+}
+
+.projects-image img {
+    width:fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding-left: 100px;
+}
+
+.projects-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.project {
+    background:none;
+    padding: 1rem;
+    border-radius: 8px;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project .btn {
+    background: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 457px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project .btn:hover{
+    background-color: var(--orange);
+    transform: scale(1.05);
+}
+
+.Growth {
+    text-align: center;
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.Growth h4 {
+    color: var(--orange);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Growth h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.Growth .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.Growth .box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Growth .box h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.Growth .box p {
+    color: #666;
+    font-size: 2rem;
+}
+
+.Growth .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--orange);
+    background: #f1f1f1;
+}
+
+
+
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }  
+    .header{
+        padding: 2rem;
+    }  
+    section{
+        padding:2rem; 
+     }
+}
+
+@media (max-width: 768px) {
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width: 90%;
+    }
+
+    .header .navbar{
+       position: absolute;
+       top:110%; right: -110%;
+       width: 30rem;
+       box-shadow: var(--box-shadow);
+       border-radius: .5rem;
+       background: #fff;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }   
+    .footer{
+        text-align: center;
+    }
+}
+

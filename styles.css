@@ -1,0 +1,114 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --orange: #FF7F50;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+button {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+button:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: .2rem solid var(--black);
+    z-index: 1000;
+    width: 500px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#contact-form input[type="email"],
+#contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form .name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-form .name-field {
+    width: 48%;
+}
+
+#contact-form .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contact-form .checkbox-container input {
+    margin-right: 20px;
+}
+
+#contact-form button[type="submit"] {
+    background: none;
+    color: var(--black);
+    border: .2rem solid var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: var(--orange);
+}
+
+#closeFormButton {
+    margin-top: 10px;
+    background: none;
+}
+
+#closeFormButton:hover {
+    background-color: var(--orange);
+}

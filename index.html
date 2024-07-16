@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Fyle</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contactus">Contact us</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h4>AWARD WINNING</h4>
+            <h3>DIGITAL MARKETING AGENCY</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+            <button id="openFormButton">Contact Us</button>
+        </div>
+        <img src="images/hero.png" alt="">
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <div class="box-container">
+            <div class="box" data-hover-img="images/1-2.png">
+                <img src="images/1-2.png" alt="">
+            </div>
+            <div class="box" data-hover-img="images/2-2.png">
+                <img src="images/2-2.png" alt="">
+            </div>
+            <div class="box" data-hover-img="images/3-2.png">
+                <img src="images/3-2.png" alt="">
+            </div>
+            <div class="box" data-hover-img="images/image.png">
+                <img src="images/image.png" alt="">
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+        <div class="AllServices">
+            <a href="https://fylehq.com" class="btn">Read More</a>
+        </div>
+    </section>
+    <div id="popupForm" class="popup">
+        <form action="https://getform.io/f/bvrewzob" method="POST" id="contact-form">
+            <label for="work-email">Work email*</label>
+            <input type="email" id="work-email" name="email" required>
+
+            <div class="name-container">
+                <div class="name-field">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="name-field">
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to Fyle's terms and conditions, and provide consent to send me
+                    communication.</label>
+            </div>
+
+            <button type="submit">Contact Us</button>
+            <button type="button" id="closeFormButton">Close</button>
+        </form>
+    </div>
+    <section class="projects" id="projects">
+        <h1 class="heading">Our <span>Projects</span></h1>
+        <div class="projects-container">
+            <div class="projects-image">
+                <img src="images/1-2.png" alt="Project 1" id="project-image">
+            </div>
+            <div class="projects-content">
+                <div class="project" data-image="images/1-2.png">
+                    <button class="btn" onclick="changeImage('images/1-2.png')">
+                        <h3>Image 1</h3>
+                        <p>A description of Image 1.</p>
+                    </button>
+                </div>
+                <div class="project" data-image="images/3-2.png">
+                    <button class="btn" onclick="changeImage('images/3-2.png')">
+                        <h3>Image 2</h3>
+                        <p>A description of Image 2.</p>
+                    </button>
+                </div>
+                <div class="project" data-image="images/image.png">
+                    <button class="btn" onclick="changeImage('images/image.png')">
+                        <h3>Image 3</h3>
+                        <p>A description of Image 3.</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Growth" id="Grwoth">
+        <h4>Expert Gwroth</h4>
+        <h1>OUR COMPANY GROWTH</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>199+</h3>
+                <p>Staticfied Customer</p>
+            </div>
+            <div class="box">
+                <h3>1591+</h3>
+                <p>Days of operation</p>
+            </div>
+            <div class="box">
+                <h3>283+</h3>
+                <p>Complete Project</p>
+            </div>
+            <div class="box">
+                <h3>75+</h3>
+                <p>Win Rewards</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
